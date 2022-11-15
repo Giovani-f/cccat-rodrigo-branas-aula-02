@@ -17,7 +17,7 @@ export default class Ride {
     let fare = 0;
     for (const segment of this.segments) {
       fare += this.fareCalculator.calculate(segment)
-    return fare < this.MIN_FARE ? this.MIN_FARE : fare
     }
+    return fare < this.MIN_FARE ? this.MIN_FARE : fare
   }
 }
